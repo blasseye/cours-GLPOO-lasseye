@@ -9,10 +9,11 @@ from exceptions import Error, ResourceNotFound
 """""
 Ecrire le diagramme de classe complet de notre application Ecrire le diagramme séquence de l’inscription d’un participant.
 Ajouter le support des articles et de commandes pour les clients :
-    - lister les article - recherche d'un article par nom 
+    - lister les article 
+    - recherche d'un article par nom 
     - ajouter un article au panier 
     - creer une commande (fictive) de votre panier. 
-    - afficher vos commande et leur status Ajouter le support des articles pour les acheterus/administrateurs 
+    - afficher vos commande et leur status Ajouter le support des articles pour les acheteurs/administrateurs 
     - Ajouter des articles 
     - Modifier des articles 
     - Supprimer un article 
@@ -58,7 +59,7 @@ class ArticleDAO(DAO):
     def update(self, article: Article, data: dict):
         if 'name' in data:
             article.name = data['name']
-        if 'lastname' in data:
+        if 'size' in data:
             article.size = data['size']
         if 'theme' in data:
             article.theme = data['theme']
