@@ -12,7 +12,7 @@ class MemberDAO(DAO):
     Member Mapping DAO
     """
 
-    def __init__(self, database_session):
+    def  __init__(self, database_session):
         super().__init__(database_session)
 
     def get(self, id):
