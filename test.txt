@@ -1,4 +1,4 @@
 Voici mon fichier
 et voici ma modification.
 
-C'est un peu chelou 
+C'est un peu chelou.
